@@ -70,7 +70,7 @@ namespace DatingApp.API.Controllers
             SecurityToken token = tokenHandler.CreateToken(tokenDescriptor);
 
             // finally use this token to write it to the response back to the client
-            return Ok(new { token = tokenHandler.WriteToken(token)});
+            return Ok(new { token = tokenHandler.WriteToken(token) });
 
             // to inspect the JWT token, goto jwt.io
         }
